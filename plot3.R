@@ -11,7 +11,7 @@ subsetData <- function(data, date1, date2) {
   #subset data and get a new dataframe with just dates from date1 and date2
   data <- subset(data, (data[,1] == c(date1)) | data[,1] == c(date2)) 
   
-  #Since we are only after "Global Active Power" we are only returning that.
+  #return data
   data
 }
 
